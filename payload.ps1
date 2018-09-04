@@ -4,7 +4,7 @@ $result = Write-Output ("The total of users locked in our PROD domain is = "+$ad
 Set-StrictMode -Version Latest
 
 $payload = @{
-	"channel" = "#inf-ad-oncall-inc"
+	"channel" = "#inf-ad-channel"
 	"icon_emoji" = ":robot_face:"
 	"text" = "$result"
 	"username" = "Mr. Robot"
