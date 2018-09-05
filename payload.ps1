@@ -1,3 +1,17 @@
+################################################################################
+################################################################################
+## Script description                                                         ##
+##                                                                            ##
+## Name      : payload.ps1                                                    ##
+## Version   : 0.1                                                            ##
+## Date      :                                                                ##
+## Language  : PowerShell cmd-lets                                            ##
+## License   : MIT                                                            ##
+## Owner     : M.G                                                            ##
+## Authors   : M.G                                                            ##
+################################################################################
+################################################################################
+
 $ad = Search-ADAccount -LockedOut
 $result = Write-Output ("The total of users locked in our PROD domain is = "+$ad.Count)
 
